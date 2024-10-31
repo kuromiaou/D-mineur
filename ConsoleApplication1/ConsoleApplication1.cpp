@@ -247,7 +247,9 @@ void restart() {
 
         for (int j = 0; j < currentLen; j++)
 
-            cout << "[ ]";
+            grille[i][j].bomb=false;
+            grille[i][j].flag=false;
+            grille[i][j].hidden=true;
 
     }
 }
@@ -303,6 +305,7 @@ int main()
                 if ((grille[j][i].bomb))
                     (grille[j][i].hidden) = false;
             }
+        isEnd=False;
         restart();
         cout << endl;
         display();
