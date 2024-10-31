@@ -301,9 +301,11 @@ int main()
         int choix;
         cout << "rejouer ?" << endl;
         cout << "1. Oui" << endl;
-        cout << "2. Non";
+        cout << "2. Non\n";
         cin >> choix;
         if (choix == 1)            
             main();
+        else
+            cout << "Goodbye. \n";
     }    
 }
