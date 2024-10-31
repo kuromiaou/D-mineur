@@ -230,20 +230,9 @@ void first(int dif) {
 }
 
 void restart() {
-    cout << "      ";
-    for (int i = 0; i < currentLen; i++)
-        if (i < 9)
-            cout << "|" << i << "|";
-        else if (i == currentLen - 1)
-            cout << "|" << i << "|";
-        else
-            cout << "|" << i;
-    cout << endl;
-    for (int i = 0; i < currentHei; i++) {
-        if (i < 10)
-            cout << " " << i << " -- ";
-        else
-            cout << i << " -- ";
+    
+    for (int i = 0; i < currentHei; i++) 
+        
 
         for (int j = 0; j < currentLen; j++)
 
